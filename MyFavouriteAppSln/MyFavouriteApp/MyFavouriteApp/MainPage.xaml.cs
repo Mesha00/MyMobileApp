@@ -14,5 +14,23 @@ namespace MyFavouriteApp
         {
             InitializeComponent();
         }
+        
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            await Task.Delay(3000);
+            var whatsappPage = new WhatsAppPage();
+            whatsappPage.BackgroundColor = Color.White;
+            await Navigation.PushAsync(whatsappPage);
+
+
+            //var navPage = new NavigationPage(new MainPage());
+            //navPage.BarBackgroundColor = Color.White;
+            //MainPage = navPage;
+
+
+
+        }
     }
 }

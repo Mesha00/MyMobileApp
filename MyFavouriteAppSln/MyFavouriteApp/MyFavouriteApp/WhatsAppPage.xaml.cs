@@ -10,11 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace MyFavouriteApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MyFirstApp : ContentPage
+    public partial class WhatsAppPage : ContentPage
     {
-        public MyFirstApp()
+        public WhatsAppPage()
         {
             InitializeComponent();
         }
+
+       
     }
 }
